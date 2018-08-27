@@ -77,24 +77,33 @@ def caesar_cipher
   puts c
 end
 
-#Hole 6: String Counter
+#Hole 6: String Counter (68 characters)
 
 def string_counter
+  w = %w[how much wood would a wood chuck chuck]
 
-
+  c = Hash.new 0
+  w.each do |w| 
+    c[w] += 1
+  end
+  puts c
 end
 
 
-#Hole 7: Mixed Pairs
+# Hole 7: Mixed Pairs
 
-def mixed_pairs
-  a = [
-    ['a', 'b']
-    ['c', 'd']
-    ['e', 'f']
-  ]
-  n = []
-  n << a.rotate
+#   def mixed_pairs
+#     a = [
+#       ['a', 'b']
+#       ['c', 'd']
+#       ['e', 'f']
+#     ]
+#     n = []
+#     n << a.rotate
+#   end
+
+#Hole 8: Love Test
+
+def love_test
+
 end
-
-mixed_pairs
